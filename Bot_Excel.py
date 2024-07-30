@@ -10,6 +10,7 @@ file_path = r'Desktop\Planilha\Planilha_Excel.xlsx'
 wb = load_workbook(file_path)
 ws = wb.active
 
+# --------------------------------- Janela ---------------------------------
 
 def store_number():
     global numero_inserido
@@ -31,6 +32,8 @@ tk.Button(root, text="Executar", command=store_number).pack(pady=10)
 numero_inserido = None
 
 root.mainloop()
+
+# --------------------------------- FIM - Janela ---------------------------------
 
 pos_linha_rk = numero_inserido
 pos_linha_nome = numero_inserido
